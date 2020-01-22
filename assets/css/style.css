@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2")
+      format("woff2"),
+    url("/assets/fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff")
+      format("woff"),
+    url("/assets/fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Museo Slab";
+  src: url("/assets/fonts/Museo_Slab_500_2-webfont.woff2") format("woff2"),
+    url("/assets/fonts/Museo_Slab_500_2-webfont.woff") format("woff");
+}
+
+/* GENERAL */
+body {
+  /* font-family: "proxima-nova", "Raleway", Helvetica, sans-serif; */
+  font-family: "Avenir", monospace;
+  font-size: 16px;
+  color: #555555;
+}
+
+/* GLOBAL */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  color: #22265c;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.subhead-center,
+.subhead-section {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+}
+
+.subhead-center:after {
+  display: block;
+  height: 2px;
+  background-color: #2bb8c2;
+  content: "";
+  width: 125px;
+  margin: 0.5em auto;
+}
+
+.subhead-section:after {
+  display: block;
+  height: 2px;
+  background-color: #2bb8c2;
+  content: "";
+  width: 125px;
+  margin: 0.5em 0;
+}
+
+.lead {
+  color: #555555;
+  text-align: center;
+}
+
+.long-form {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 1.3em;
+  width: 62%;
+}
+
+.text-accent,
+.text-link {
+  color: #00aab6;
+}
+
+.text-link:hover {
+  color: #22265c;
+}
+
+.newsletter-head {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+  color: #fff;
+}
+
+.bg-gray {
+  background-color: #eaeaea;
+}
+
+.section-divider {
+  color: #707070;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.2em;
+  padding: 0.4em;
+  border-radius: 0;
+  min-width: 200px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #21244a;
+  box-shadow: 0 3px 6px rgba(33, 36, 74, 0.5);
+  border: 4px solid #21244a;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #fff;
+  border: 4px solid #f05934;
+  color: #f05934;
+  box-shadow: 0 3px 6px rgba(240, 89, 52, 0.5);
+}
+
+.btn-secondary {
+  background-color: #00aab6;
+  border: 4px solid #00aab6;
+  box-shadow: 0 3px 6px rgba(0, 170, 182, 0.5);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #fff;
+  border: 4px solid #00aab6;
+  color: #00aab6;
+  box-shadow: 0 3px 6px rgba(0, 170, 182, 0.5);
+}
+
+/* NAVBAR */
+/* .container {
+  max-width: 1280px;
+} */
+
+.active a {
+  color: #f05934 !important;
+}
+
+.bg-dark {
+  background-color: rgba(33, 36, 74, 0.6) !important;
+}
+
+.navbar__logo {
+  height: 50px;
+}
+
+.nav-item {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.nav-link {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #f05934 !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* ---HOME--- */
+
+/* HERO */
+.home-hero {
+  background-image: url("/assets/img/Hero-girl.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.hero-main-header {
+  color: #fff;
+  margin-top: 45%;
+}
+
+/* VALUES */
+.value-subhead {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+  padding-top: 0.5em;
+}
+
+/* SERVICES */
+
+/* DYK */
+
+.circle-counter {
+  border: 4px solid #22265c;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* NEWSLETTER */
+.newsletter-image {
+  max-width: 100%;
+  background-size: cover;
+  height: 600px;
+  background-image: url("/assets/img/newsletter-photo.jpg");
+}
+
+.newsletter-container {
+  background-color: #00aab6;
+  width: 100%;
+}
+
+/* ABOUT */
+
+.about-hero {
+  background-image: url("/assets/img/about-team.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.team-member-name {
+  color: #22265c;
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.team-member-title {
+  font-size: 1.2em;
+}
+
+/* RESEARCH */
+
+.research-hero {
+  background-image: url("/assets/img/researchers.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.section-research-testimonial-slider {
+  background-color: #22265c;
+  color: #fff;
+  padding: 5em 0;
+}
+
+.testimonial-head {
+  color: #fff;
+}
+
+.testimonial-quote-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.testimonial-quote-right {
+  position: absolute;
+  right: 0;
+}
+
+.testimonial-text {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.8em;
+}
+
+.testimonial-portrait {
+  height: 150px;
+}
+
+/* CONTACT CALLOUT */
+
+.contact-callout {
+  background-image: url("/assets/img/research_Bottom.jpg");
+  min-height: 60vh;
+}
+
+.contact-head {
+  font-size: 2.2em;
+}
+
+.contact-text {
+  color: #22265c;
+  line-height: 1.6em;
+  font-size: 1.4em;
+}
+
+/* SERVICE PAGE */
+
+.service-hero {
+  background-image: url("/assets/img/service-head.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+/* OPPORTUNITIES PAGE */
+
+.opportunities-hero {
+  background-image: url("/assets/img/opportunities-header.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.role-container {
+  background-color: #22265c;
+  color: #fff;
+  padding: 1em;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.role-container:hover {
+  background-color: #f05934;
+}
+
+.accomplishment-section {
+  background-color: #e2e2e2;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.accomplishment-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #00aab6;
+}
+
+.accomplishment-desc {
+  color: #22265c;
+}
+
+/* CONTACT PAGE */
+
+.contact-hero {
+  background-image: url("/assets/img/contact-header.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+/* ROLE TEMPLATE */
+
+.role-subhead {
+  color: #f15934;
+}
+
+.role-form-container {
+  background-color: #ededed;
+  padding: 1.5em;
+  margin-bottom: 5em;
+}
+
+/* FOOTER */
+footer {
+  padding-bottom: 2em;
+}
+
+.footer-top {
+  border-top: 1px solid #707070;
+  margin: 2em 0;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer a {
+  color: #555555;
+}
+
+footer a:hover {
+  color: #f05934;
+}
