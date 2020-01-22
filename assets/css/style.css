@@ -42,8 +42,19 @@ p {
   line-height: 1.6em;
 }
 
+section {
+  margin: 2.5em 0;
+  padding: 2.5em 0;
+}
+
+.overwrite {
+  margin: 0;
+  padding: 0;
+}
+
 .subhead-center,
-.subhead-section {
+.subhead-section,
+.offering-btn {
   font-family: "Museo Slab", Georgia, "Times New Roman", serif;
 }
 
@@ -211,6 +222,10 @@ p {
   vertical-align: middle;
 }
 
+.client-logo {
+  max-height: 60px;
+}
+
 /* NEWSLETTER */
 .newsletter-image {
   max-width: 100%;
@@ -363,7 +378,19 @@ p {
 
 /* ROLE TEMPLATE */
 
+.role-title,
+.role-title-2,
+.role-company {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+}
+
+.role-formtitle {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+  padding-bottom: 1.5em;
+}
+
 .role-subhead {
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
   color: #f15934;
 }
 
