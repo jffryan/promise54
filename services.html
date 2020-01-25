@@ -32,6 +32,7 @@
 
     <!-- CUSTOM THEME CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tabs.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -91,7 +92,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-end">
           <div class="col">
-            <h1 class="hero-main-header">
+            <h1 class="hero-main-header lucky display-1">
               Our Services
             </h1>
             <p class="hero-text">
@@ -105,29 +106,54 @@
     </section>
 
     <!-- DYK BENEFITS -->
-    <section id="dyk">
+    <section>
       <div class="container">
-        <div class="row py-4">
-          <div class="col">
-            <h2 class="subhead-center text-center pb-4">
-              The case for diversity, equity & inclusion
-            </h2>
-            <p class="">
-              In 2016, Frances Messano (Managing Partner – NewSchools Venture
-              Fund) and the authors, Xiomara Padamsee (CEO – Promise54) and
-              Becky Crowe (Senior Adviser – Bellwether Education Partners),
-              brought together a group of education funders to underwrite a
-              rigorous study of the state of diversity, equity, and inclusion in
-              the sector. While this group perceived a near-universal awareness
-              of the lack of diversity within education organizations, no one
-              had yet taken on a field-level research project to quantify the
-              issue in aggregate.
+        <ul class="service-tabs row">
+          <li
+            data-tab-target="#advising"
+            id="advising-tab"
+            class="service-tab selected-tab"
+          >
+            Advising
+          </li>
+          <li data-tab-target="#cohorts" id="cohorts-tab" class="service-tab">
+            Cohorts
+          </li>
+          <li data-tab-target="#coaching" id="coaching-tab" class="service-tab">
+            Coaching
+          </li>
+          <li
+            data-tab-target="#executive-search"
+            id="executive-tab"
+            class="service-tab"
+          >
+            Executive Search
+          </li>
+        </ul>
+
+        <div class="tab-content service-tab-section">
+          <div id="advising" data-tab-content class="selected-tab">
+            <p class="lead">
+              The value we place on diversity, equity and inclusion will show up
+              in our conversations, strategies, and ultimate impact.
             </p>
-            <p>
-              Our strong hope is that this study inspires our colleagues within
-              education organizations of all types to recognize diversity,
-              equity, and inclusion as a source of unrealized impact and commit
-              to progress as an organizational imperative.
+          </div>
+          <div id="cohorts" data-tab-content>
+            <p class="lead">
+              Cohorts. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Numquam placeat, ab obcaecati ipsa explicabo iste.
+            </p>
+          </div>
+          <div id="coaching" data-tab-content>
+            <p class="lead">
+              Coaching. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus quasi asperiores distinctio enim iusto ipsum.
+            </p>
+          </div>
+          <div id="executive-search" data-tab-content>
+            <p class="lead">
+              Executive Search. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Iure, quibusdam?
             </p>
           </div>
         </div>
@@ -373,7 +399,7 @@
                 <a href="#">Join our team</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="/faq.html">FAQ</a>
               </li>
             </ul>
           </div>
@@ -407,5 +433,6 @@
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/tabs.js"></script>
   </body>
 </html>

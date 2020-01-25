@@ -14,10 +14,16 @@
     url("/assets/fonts/Museo_Slab_500_2-webfont.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Lucky Fella";
+  src: url("/assets/fonts/39C54C_0_0.woff2") format("woff2"),
+    url("/assets/fonts/39C54C_0_0.woff") format("woff"),
+    url("/assets/fonts/39C54C_0_0.ttf") format("truetype");
+}
+
 /* GENERAL */
 body {
-  /* font-family: "proxima-nova", "Raleway", Helvetica, sans-serif; */
-  font-family: "Avenir", monospace;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #555555;
 }
@@ -88,6 +94,10 @@ section {
   padding-top: 1em;
 }
 
+.lucky {
+  font-family: "Lucky Fella", Arial, Helvetica, sans-serif;
+}
+
 .hero-text {
   color: #fff;
   font-size: 1.3em;
@@ -156,9 +166,6 @@ section {
 }
 
 /* NAVBAR */
-/* .container {
-  max-width: 1280px;
-} */
 
 .active a {
   color: #f05934 !important;
@@ -232,6 +239,10 @@ section {
   background-size: cover;
   height: 600px;
   background-image: url("/assets/img/newsletter-photo.jpg");
+}
+
+#newsletter-signup {
+  margin-top: -100px;
 }
 
 .newsletter-container {
@@ -344,11 +355,15 @@ section {
   display: flex;
   align-items: flex-end;
   transition: 0.4s ease-in-out;
-  cursor: pointer;
 }
 
 .role-container:hover {
   background-color: #f05934;
+}
+
+.role-container > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .accomplishment-section {

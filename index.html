@@ -32,6 +32,7 @@
 
     <!-- CUSTOM THEME CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/circle.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -157,16 +158,22 @@
         </div>
         <div class="row justify-content-between text-center py-4">
           <div class="col-lg-3 col-sm-6 my-3">
-            <a href="#" class="btn btn-primary offering-btn">Advising</a>
+            <a href="/services.html" class="btn btn-primary offering-btn"
+              >Advising</a
+            >
           </div>
           <div class="col-lg-3 col-sm-6 my-3">
-            <a href="#" class="btn btn-primary offering-btn">Cohorts</a>
+            <a href="/services.html" class="btn btn-primary offering-btn"
+              >Cohorts</a
+            >
           </div>
           <div class="col-lg-3 col-sm-6 my-3">
-            <a href="#" class="btn btn-primary offering-btn">Coaching</a>
+            <a href="/services.html" class="btn btn-primary offering-btn"
+              >Coaching</a
+            >
           </div>
           <div class="col-lg-3 col-sm-6 my-3">
-            <a href="#" class="btn btn-primary offering-btn"
+            <a href="/services.html" class="btn btn-primary offering-btn"
               >Executive Search</a
             >
           </div>
@@ -182,38 +189,51 @@
             <h2 class="subhead-center">Did You Know?</h2>
           </div>
         </div>
-        <div class="row py-4">
-          <div class="col-md-3">
-            <div class="circle-counter"></div>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="dyk-box">
+              <div class="canvas-wrap">
+                <canvas id="canvas01" width="300" height="300"></canvas>
+                <span id="percent01" class="stat-percent"></span>
+              </div>
+              <p class="dyk-text">
+                of our placements have increased the diversity of our client
+                teams.
+              </p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p>
-              Of our placements have increased the diversity of our client
-              teams.
-            </p>
+          <div class="col-6">
+            <div class="dyk-box">
+              <div class="canvas-wrap">
+                <canvas id="canvas02" width="300" height="300"></canvas>
+                <span id="percent02" class="stat-percent"></span>
+              </div>
+              <p class="dyk-text">
+                of our placements have been leaders of color.
+              </p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <div class="circle-counter"></div>
+          <div class="col-6">
+            <div class="dyk-box">
+              <div class="canvas-wrap">
+                <canvas id="canvas03" width="300" height="300"></canvas>
+                <span id="percent03" class="stat-percent"></span>
+              </div>
+              <p class="dyk-text">
+                quisque eu vestibulum ligula nulla roncus quis.
+              </p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p>Of our placements have been leaders of color.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="circle-counter"></div>
-          </div>
-          <div class="col-md-3">
-            <p>
-              Of our placements have increased the diversity of our client
-              teams.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <div class="circle-counter"></div>
-          </div>
-          <div class="col-md-3">
-            <p>Of our placements have been leaders of color.</p>
+          <div class="col-6">
+            <div class="dyk-box">
+              <div class="canvas-wrap">
+                <canvas id="canvas04" width="300" height="300"></canvas>
+                <span id="percent04" class="stat-percent"></span>
+              </div>
+              <p class="dyk-text">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -336,16 +356,16 @@
 
     <!-- NEWSLETTER -->
     <div class="newsletter-image"></div>
-    <section>
+    <section id="newsletter-signup">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col">
             <form
-              class="row align-items-center justify-content-between"
+              class="row align-items-center justify-content-between p-4"
               style="background-color: #00AAB6;"
             >
               <div class="col-3">
-                <h4 class="newsletter-head">Join Our Newsletter</h4>
+                <h4 class="newsletter-head overwrite">Join Our Newsletter</h4>
               </div>
               <div class="form-group col-4">
                 <label for="exampleInputEmail1"
@@ -365,7 +385,7 @@
             </form>
           </div>
         </div>
-        <div class="row justify-content-center py-4">
+        <div class="row justify-content-center pt-5">
           <a href="#" class="btn btn-primary">Connect With Us</a>
         </div>
       </div>
@@ -414,7 +434,7 @@
                 <a href="#">Join our team</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="/faq.html">FAQ</a>
               </li>
             </ul>
           </div>
@@ -448,5 +468,6 @@
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/loading-circles.js"></script>
   </body>
 </html>

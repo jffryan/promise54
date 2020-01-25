@@ -1,0 +1,15 @@
+.faq-hero {
+  background-image: url("/assets/img/faq-head.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.faq-title,
+.btn.faq-title:hover {
+  color: #f15934;
+}
+
+.faq-title.collapsed {
+  color: #000;
+}

@@ -1,0 +1,56 @@
+.service-tab-section {
+  background-color: #00aab6;
+}
+
+[data-tab-content] {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 4s;
+}
+
+.selected-tab[data-tab-content] {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.service-tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.service-tab {
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Museo Slab", Georgia, "Times New Roman", serif;
+  width: 25%;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.service-tab:hover {
+  background-color: #aaa;
+}
+
+#advising-tab.service-tab.selected-tab,
+#coaching-tab.service-tab.selected-tab {
+  background-color: #00aab6;
+  color: #fff;
+}
+#advising-tab:hover,
+#coaching-tab:hover {
+  background-color: #a5dfe3;
+  color: #fff;
+}
+#cohorts-tab.service-tab.selected-tab,
+#executive-tab.service-tab.selected-tab {
+  background-color: #202456;
+  color: #fff;
+}
+#cohorts-tab:hover,
+#executive-tab:hover {
+  background-color: #4b4e70;
+  color: #fff;
+}
