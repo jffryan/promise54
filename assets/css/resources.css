@@ -1,0 +1,43 @@
+.resources-head {
+  background-image: url("/assets/img/resources-head.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.report-container {
+  background-color: #e8e8e8;
+  color: #555555;
+  padding: 1em;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border: 10px solid #33304f;
+}
+
+.report-container:hover {
+  border: 10px solid #00aab6;
+}
+
+.report-container > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.additional-resource-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.additional-resource-text::after {
+  display: block;
+  height: 2px;
+  background-color: #e5e5e5;
+  content: "";
+  width: 100%;
+  margin: 0.5em 0;
+}

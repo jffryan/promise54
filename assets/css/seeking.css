@@ -1,0 +1,65 @@
+.talent-head {
+  background-image: url("/assets/img/seeking-talent.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: -80px;
+}
+
+.talent-container {
+  background-color: #e8e8e8;
+  color: #555555;
+  padding: 1em;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border: 10px solid #33304f;
+}
+
+.talent-container:hover {
+  border: 10px solid #00aab6;
+}
+
+.talent-container > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.additional-resource-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.additional-resource-text::after {
+  display: block;
+  height: 2px;
+  background-color: #e5e5e5;
+  content: "";
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.specialty-navigation {
+  list-style: none;
+  display: flex;
+}
+
+.specialty-navigation li {
+  padding: 0 2em;
+  margin: 0 2em;
+}
+
+.specialty-active {
+  font-weight: bold;
+}
+.specialty-active::after {
+  display: block;
+  height: 2px;
+  background-color: #2bb8c2;
+  content: "";
+  width: 25px;
+  margin: 0.5em auto;
+}

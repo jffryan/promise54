@@ -76,7 +76,9 @@
                 <a class="nav-link" href="/opportunities.html">Opportunities</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">P54 Collective</a>
+                <a class="nav-link" href="https://www.54collective.org/"
+                  >54 Collective</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact.html">Contact Us</a>
@@ -86,6 +88,12 @@
         </div>
       </nav>
     </header>
+
+    <!-- SCROLL TO TOP -->
+
+    <a href="javascript:" id="return-to-top"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
 
     <!-- HERO -->
     <section id="hero" class="service-hero">
@@ -181,7 +189,7 @@
               Whether talent system advising, executive search, or coaching, our
               approach is holistic.
             </p>
-            <p>
+            <p class="lead text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
               efficitur mauris. Nullam eu dui aliquet, ornare dolor nec,
               scelerisque sapien. Nulla rhoncus quis nisi sed aliquam. Quisque
@@ -199,8 +207,142 @@
       </div>
     </section>
 
-    <!-- TESTIMONIAL SLIDER -->
+    <!-- SLIDER WIP -->
     <section class="section-research-testimonial-slider">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col text-center">
+                  <h2 class="testimonial-head">Kind Words</h2>
+                  <img
+                    src="assets/img/quote-left.png"
+                    alt="quote-left"
+                    class="testimonial-quote-left"
+                  />
+                  <img
+                    src="assets/img/quote-right.png"
+                    alt="quote-right"
+                    class="testimonial-quote-right"
+                  />
+                  <p class="testimonial-text">
+                    We are so grateful to have had this partnership. With our
+                    mission and values in mind, they helped gauge our talent
+                    needs and recommend strategies to ensure Teach For America's
+                    work is efficient and impactful.
+                  </p>
+                  <img
+                    src="assets/img/ElisaVillanuevaBeard.png"
+                    alt="Elisa Villanueva Beard"
+                    class="testimonial-portrait py-4"
+                  />
+                  <p class="testimonial-title">
+                    Elisa Villanueva Beard, CEO at Teach For America
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col text-center">
+                  <h2 class="testimonial-head">Kind Words</h2>
+                  <img
+                    src="assets/img/quote-left.png"
+                    alt="quote-left"
+                    class="testimonial-quote-left"
+                  />
+                  <img
+                    src="assets/img/quote-right.png"
+                    alt="quote-right"
+                    class="testimonial-quote-right"
+                  />
+                  <p class="testimonial-text">
+                    “Sometimes in your career, you find yourself in a place, or
+                    a role, or an organization in which, for whatever reason,
+                    you are not thriving. Admitting that you are struggling is
+                    difficult and it can raise existential questions: Am I good
+                    enough? What is my purpose? Did I make a bad choice? Monisha
+                    was a friend and adviser to me when I was in this vulnerable
+                    state and I was able to dig deep into these issues without
+                    judgment or fear and ultimately, transition to a role where
+                    I am happy and dare I say, thriving. And, Monisha also
+                    helped me recognize that these difficult moments in a career
+                    journey are not only normal, but essential, to grow into the
+                    leader you are meant to be.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col text-center">
+                  <h2 class="testimonial-head">What We Learned</h2>
+                  <img
+                    src="assets/img/quote-left.png"
+                    alt="quote-left"
+                    class="testimonial-quote-left"
+                  />
+                  <img
+                    src="assets/img/quote-right.png"
+                    alt="quote-right"
+                    class="testimonial-quote-right"
+                  />
+                  <p class="testimonial-text">
+                    Staff perceptions about diversity, equity and inclusion in
+                    their organizations impact retention. Staff – especially
+                    staff of color – are significantly more like to stay in
+                    diverse, equitable, and inclusive organizations.
+                  </p>
+                  <img
+                    src="assets/img/stock-testimonial.png"
+                    alt="stock person"
+                    class="testimonial-portrait py-4"
+                  />
+                  <p class="testimonial-title">
+                    Elisa Villanueva Beard, CEO at Teach For America
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SLIDER -->
+    <!-- <section class="section-research-testimonial-slider">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -232,7 +374,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- PARTNERS -->
     <section id="partners" class="home-partners">
@@ -324,24 +466,27 @@
     </section>
 
     <!-- NEWSLETTER SIGNUP -->
-    <section>
+    <section id="newsletter-signup">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col">
             <form
-              class="row align-items-center justify-content-between"
+              class="row align-items-center justify-content-between p-4"
               style="background-color: #00AAB6;"
             >
               <div class="col-3">
-                <h4>Join Our Newsletter</h4>
+                <h4 class="newsletter-head overwrite">Join Our Newsletter</h4>
               </div>
               <div class="form-group col-4">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1"
+                  ><span class="sr-only">Email address</span></label
+                >
                 <input
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  placeholder="Enter your email"
                 />
               </div>
               <div class="col-4">
@@ -350,7 +495,7 @@
             </form>
           </div>
         </div>
-        <div class="row justify-content-center py-4">
+        <div class="row justify-content-center pt-5">
           <a href="#" class="btn btn-primary">Connect With Us</a>
         </div>
       </div>
